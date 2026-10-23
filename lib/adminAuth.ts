@@ -13,8 +13,8 @@ export async function requireAdmin(
   res: NextApiResponse
 ): Promise<any | null> {
   try {
-    const session = await getServerSession(req, res, authOptions as any);
-    if ((session?.user as any)?.role === "admin") {
+    const session: any = await getServerSession(req, res, authOptions as any);
+    if (session?.user?.role === "admin") {
       return session;
     }
   } catch (e) {
