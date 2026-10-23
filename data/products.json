@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "maSanPham": "DPGYM-001",
+    "name": "Áo Đồng Phục Gym Premium",
+    "price": 180000,
+    "originalPrice": 250000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Áo đồng phục gym cao cấp, thiết kế năng động, phù hợp cho các hoạt động tập luyện cường độ cao.</p><h3>Đặc điểm nổi bật:</h3><ul><li>Chất liệu thun lạnh 4 chiều co giãn tốt</li><li>Thấm hút mồ hôi nhanh, thoáng khí</li><li>Form dáng ôm vừa vặn, tôn dáng</li><li>Độ bền cao, không phai màu</li><li>Có thể in/thêu logo theo yêu cầu</li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-gym",
+    "categoryNameVN": "Đồng phục Gym",
+    "description": "Áo đồng phục gym cao cấp, chất liệu thun lạnh 4 chiều, thiết kế năng động phù hợp tập luyện",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#000000",
+        "image": "/images/products/dpgym-001-black.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#808080",
+        "image": "/images/products/dpgym-001-gray.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#0000FF",
+        "image": "/images/products/dpgym-001-blue.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#FFFFFF",
+        "image": "/images/products/dpgym-001-white.jpg"
+      }
+    ],
+    "slug": "ao-dong-phuc-gym-premium",
+    "rating": 4.9,
+    "reviewCount": 342,
+    "material": "Thun lạnh 4 chiều"
+  },
+  {
+    "id": 3,
+    "maSanPham": "DPPB-003",
+    "name": "Áo Đồng Phục Pickleball",
+    "price": 165000,
+    "originalPrice": 220000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Áo đồng phục pickleball chuyên dụng, thiết kế thể thao năng động, phù hợp cho môn thể thao đang hot.</p><h3>Đặc điểm nổi bật:</h3><ul><li><p>Chất liệu thun lạnh thoáng khí</p></li><li><p>Thấm hút mồ hôi cực tốt</p></li><li><p>Nhẹ nhàng, thoải mái khi vận động</p></li><li><p>Màu sắc bền đẹp, không phai</p></li><li><p>In/thêu logo sắc nét</p></li></ul>",
+    "isNew": false,
+    "isFeatured": false,
+    "category": "dong-phuc-pickleball",
+    "categoryNameVN": "Đồng phục Pickleball",
+    "description": "Áo đồng phục pickleball chuyên dụng, chất liệu thun lạnh thoáng khí, thiết kế năng động",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#bd1557",
+        "image": "/products/apl/apl2-01.webp"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#95594e",
+        "image": "/products/apl/apl2-02.webp"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#000000",
+        "image": "/products/apl/apl2-03.webp"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#ffffff",
+        "image": "/products/apl/apl2-04.webp"
+      }
+    ],
+    "slug": "ao-dong-phuc-pickleball",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "material": "Thun lạnh"
+  },
+  {
+    "id": 4,
+    "maSanPham": "DPRUN-004",
+    "name": "Bộ Đồng Phục Chạy Bộ",
+    "price": 195000,
+    "originalPrice": 260000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Bộ đồng phục chạy bộ chuyên nghiệp, thiết kế tối ưu cho runner, giúp tăng hiệu suất vận động.</p><h3>Đặc điểm nổi bật:</h3><ul><li>Chất liệu polyester thoáng khí</li><li>Công nghệ Dry-Fit thấm hút mồ hôi</li><li>Nhẹ nhàng như không mặc gì</li><li>Chống tia UV, bảo vệ da</li><li>Thiết kế phản quang an toàn</li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-pickleball",
+    "categoryNameVN": "Đồng phục Pickleball",
+    "description": "Bộ đồng phục chạy bộ chuyên nghiệp, chất liệu polyester, công nghệ Dry-Fit",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#FFA500",
+        "image": "/images/products/dprun-004-orange.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#000080",
+        "image": "/images/products/dprun-004-navy.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#8B0000",
+        "image": "/images/products/dprun-004-blackred.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#FFFFFF",
+        "image": "/images/products/dprun-004-white.jpg"
+      }
+    ],
+    "slug": "bo-dong-phuc-chay-bo",
+    "rating": 4.9,
+    "reviewCount": 412,
+    "material": "Polyester Dry-Fit"
+  },
+  {
+    "id": 5,
+    "maSanPham": "DPMMA-005",
+    "name": "Bộ Đồng Phục MMA",
+    "price": 250000,
+    "originalPrice": 350000,
+    "content": "<p>Bộ đồng phục MMA chuyên nghiệp, thiết kế chắc chắn, độ bền cao cho các võ sĩ.</p><h3>Đặc điểm nổi bật:</h3><ul><li><p>Chất liệu polyester pha spandex siêu bền</p></li><li><p>Co giãn 4 chiều tối đa</p></li><li><p>Đường may tăng cường độ chắc chắn</p></li><li><p>Chống xé rách, chống mài mòn</p></li><li><p>Thiết kế ôm sát, không cản trở vận động</p></li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-pickleball",
+    "categoryNameVN": "Đồng phục Pickleball",
+    "description": "Bộ đồng phục MMA chuyên nghiệp, chất liệu siêu bền, thiết kế cho võ sĩ",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#000000",
+        "image": "/images/products/dpmma-005-black.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#8B0000",
+        "image": "/images/products/dpmma-005-redblack.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#000080",
+        "image": "/images/products/dpmma-005-blueblack.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#FFFFFF",
+        "image": "/images/products/dpmma-005-white.jpg"
+      }
+    ],
+    "slug": "bo-dong-phuc-mma",
+    "rating": 4.8,
+    "reviewCount": 178,
+    "material": "Polyester pha Spandex"
+  },
+  {
+    "id": 6,
+    "maSanPham": "DPPOLO-006",
+    "name": "Áo Đồng Phục Polo Cao Cấp",
+    "price": 145000,
+    "originalPrice": 190000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Áo polo đồng phục cao cấp, kiểu dáng thanh lịch, phù hợp nhiều ngành nghề và sự kiện.</p><h3>Đặc điểm nổi bật:</h3><ul><li>Chất liệu cotton pha PE cao cấp</li><li>Cổ bẻ thanh lịch, có cúc gài</li><li>Form dáng chuẩn, dễ phối đồ</li><li>Thoáng mát, hút ẩm tốt</li><li>In/thêu logo đẹp, sắc nét</li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-ao-polo",
+    "categoryNameVN": "Đồng phục áo Polo",
+    "description": "Áo đồng phục polo cao cấp, chất liệu cotton pha PE, kiểu dáng thanh lịch",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#0000FF",
+        "image": "/images/products/dppolo-006-blue.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#FFFFFF",
+        "image": "/images/products/dppolo-006-white.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#DC143C",
+        "image": "/images/products/dppolo-006-crimson.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#808080",
+        "image": "/images/products/dppolo-006-gray.jpg"
+      }
+    ],
+    "slug": "ao-dong-phuc-polo-cao-cap",
+    "rating": 4.8,
+    "reviewCount": 567,
+    "material": "Cotton pha PE"
+  },
+  {
+    "id": 7,
+    "maSanPham": "DPCS-007",
+    "name": "Áo Đồng Phục Công Sở",
+    "price": 160000,
+    "originalPrice": 210000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Áo đồng phục công sở sang trọng, thiết kế chuyên nghiệp, phù hợp cho môi trường văn phòng.</p><h3>Đặc điểm nổi bật:</h3><ul><li>Chất liệu vải cotton 100% cao cấp</li><li>Form dáng chuẩn, lịch sự</li><li>Dễ dàng là ủi, giữ form đẹp</li><li>Màu sắc trang nhã, sang trọng</li><li>Thêu/in logo tinh tế</li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-yoga-pilates",
+    "categoryNameVN": "Đồng phục Yoga – Pilates",
+    "description": "Áo đồng phục công sở sang trọng, chất liệu cotton 100%, thiết kế chuyên nghiệp",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#FFFFFF",
+        "image": "/images/products/dpcs-007-white.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#000080",
+        "image": "/images/products/dpcs-007-navy.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#000000",
+        "image": "/images/products/dpcs-007-black.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#D3D3D3",
+        "image": "/images/products/dpcs-007-lightgray.jpg"
+      }
+    ],
+    "slug": "ao-dong-phuc-cong-so",
+    "rating": 4.7,
+    "reviewCount": 423,
+    "material": "Cotton 100%"
+  },
+  {
+    "id": 8,
+    "maSanPham": "DPTB-008",
+    "name": "Bộ Đồng Phục Team Building",
+    "price": 170000,
+    "originalPrice": 230000,
+    "content": "<h2>Mô tả sản phẩm</h2><p>Bộ đồng phục team building năng động, thiết kế trẻ trung, tạo tinh thần đồng đội.</p><h3>Đặc điểm nổi bật:</h3><ul><li>Chất liệu thun PE thoáng mát</li><li>Màu sắc tươi sáng, nổi bật</li><li>Thiết kế năng động, trẻ trung</li><li>Phù hợp cho các hoạt động ngoài trời</li><li>In ấn logo, slogan theo yêu cầu</li></ul>",
+    "isNew": true,
+    "isFeatured": true,
+    "category": "dong-phuc-team-building",
+    "categoryNameVN": "Đồng phục Team building",
+    "description": "Bộ đồng phục team building năng động, chất liệu thun PE, thiết kế trẻ trung",
+    "colors": [
+      {
+        "name": "Màu 1",
+        "hex": "#FF0000",
+        "image": "/images/products/dptb-008-red.jpg"
+      },
+      {
+        "name": "Màu 2",
+        "hex": "#0000FF",
+        "image": "/images/products/dptb-008-blue.jpg"
+      },
+      {
+        "name": "Màu 3",
+        "hex": "#FFD700",
+        "image": "/images/products/dptb-008-yellow.jpg"
+      },
+      {
+        "name": "Màu 4",
+        "hex": "#FFA500",
+        "image": "/images/products/dptb-008-orange.jpg"
+      }
+    ],
+    "slug": "bo-dong-phuc-team-building",
+    "rating": 4.9,
+    "reviewCount": 634,
+    "material": "Thun PE"
+  }
+]

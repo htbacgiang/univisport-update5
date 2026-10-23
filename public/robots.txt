@@ -1,0 +1,64 @@
+# ============================================================
+# robots.txt — dongphucunivi.com
+# ============================================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /search?
+
+# Google AI Overview
+User-agent: Google-Extended
+Allow: /
+
+# ChatGPT / OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing + Copilot
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Default
+User-agent: *
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /search?
+
+# Sitemap
+Sitemap: https://dongphucunivi.com/sitemap.xml

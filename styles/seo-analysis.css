@@ -1,0 +1,153 @@
+/* SEO Analysis Component Styles */
+.seo-analysis-container {
+  @apply space-y-4;
+}
+
+.seo-score-summary {
+  @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4;
+}
+
+.seo-score-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.seo-score-title {
+  @apply text-lg font-semibold text-gray-800 dark:text-white;
+}
+
+.seo-score-display {
+  @apply text-right;
+}
+
+.seo-score-number {
+  @apply text-2xl font-bold;
+}
+
+.seo-score-label {
+  @apply text-sm;
+}
+
+.seo-progress-bar {
+  @apply w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2;
+}
+
+.seo-progress-fill {
+  @apply h-2 rounded-full transition-all duration-300;
+}
+
+.seo-progress-fill.good {
+  @apply bg-green-500;
+}
+
+.seo-progress-fill.warning {
+  @apply bg-yellow-500;
+}
+
+.seo-progress-fill.bad {
+  @apply bg-red-500;
+}
+
+.seo-checks-section {
+  @apply space-y-3;
+}
+
+.seo-section-title {
+  @apply text-base font-semibold text-gray-800 dark:text-white;
+}
+
+.seo-check-item {
+  @apply border rounded-lg p-3;
+}
+
+.seo-check-item.good {
+  @apply border-green-200 bg-green-50 dark:bg-green-900/20;
+}
+
+.seo-check-item.bad {
+  @apply border-red-200 bg-red-50 dark:bg-red-900/20;
+}
+
+.seo-check-item.warning {
+  @apply border-yellow-200 bg-yellow-50 dark:bg-yellow-900/20;
+}
+
+.seo-check-item.info {
+  @apply border-blue-200 bg-blue-50 dark:bg-blue-900/20;
+}
+
+.seo-check-content {
+  @apply flex items-start gap-3;
+}
+
+.seo-check-icon {
+  @apply flex-shrink-0;
+}
+
+.seo-check-details {
+  @apply flex-1;
+}
+
+.seo-check-header {
+  @apply flex items-center justify-between mb-1;
+}
+
+.seo-check-title {
+  @apply font-medium text-gray-800 dark:text-white;
+}
+
+.seo-check-score {
+  @apply text-sm font-medium text-gray-600 dark:text-gray-400;
+}
+
+.seo-check-description {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+/* Status Colors */
+.seo-status-good {
+  @apply text-green-500;
+}
+
+.seo-status-bad {
+  @apply text-red-500;
+}
+
+.seo-status-warning {
+  @apply text-yellow-500;
+}
+
+.seo-status-info {
+  @apply text-blue-500;
+}
+
+/* Score Colors */
+.seo-score-good {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.seo-score-warning {
+  @apply text-yellow-600 dark:text-yellow-400;
+}
+
+.seo-score-bad {
+  @apply text-red-600 dark:text-red-400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seo-check-content {
+    @apply flex-col gap-2;
+  }
+  
+  .seo-check-header {
+    @apply flex-col items-start gap-1;
+  }
+  
+  .seo-score-header {
+    @apply flex-col gap-2;
+  }
+  
+  .seo-score-display {
+    @apply text-center;
+  }
+}

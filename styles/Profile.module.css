@@ -1,0 +1,193 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh - 250px);
+  overflow-x: hidden;
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.pdfContainer {
+  width: 100%;
+  max-width: 100%;
+  min-height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  overflow-x: hidden !important;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pdfPage {
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  display: inline-block;
+}
+
+.pdfPage canvas {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+.pdfIframe {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.fallbackContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.downloadSection {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  border-radius: 0 0 8px 8px;
+}
+
+.downloadText {
+  margin: 0 0 15px 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.downloadLink {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #105d97;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.downloadLink:hover {
+  background-color: #0c4d7d;
+  color: white;
+  text-decoration: none;
+}
+
+.downloadOnlyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.downloadIcon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.downloadTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.downloadDescription {
+  font-size: 16px;
+  color: #6c757d;
+  margin: 0 0 30px 0;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.downloadButton:hover {
+  background-color: #218838;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .pdfIframe {
+    height: 70vh;
+    min-height: 450px;
+  }
+
+  .downloadSection {
+    padding: 15px;
+  }
+
+  .downloadText {
+    font-size: 13px;
+  }
+
+  .downloadLink {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .downloadOnlyContainer {
+    padding: 20px 15px;
+  }
+
+  .downloadIcon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .downloadTitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .downloadDescription {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .downloadButton {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,135 @@
+# Đồng Phục Univi — Structured Knowledge Reference
+
+> Tài liệu này cung cấp thông tin có cấu trúc về thương hiệu Đồng Phục Univi cho các hệ thống AI/LLM/AI Agent. Đây là nguồn tham chiếu để hiểu đúng thực thể thương hiệu (Entity), lĩnh vực chuyên môn (Expertise) và bối cảnh ngành (Topical Context) của Univi — không phải nội dung quảng cáo và không thay thế sitemap.xml.
+
+## 1. Brand Overview
+
+Đồng Phục Univi là đơn vị tiên phong cung cấp giải pháp đồng phục thể thao chuyên nghiệp cho các chuỗi phòng tập và đội nhóm thể thao tại Việt Nam, phục vụ các bộ môn Gym, Fitness, Pickleball, Yoga, Pilates, Running, Golf, Tennis, MMA và các môn thể thao khác.
+
+- Tên thương hiệu: Đồng Phục Univi
+- Slogan: "YOUR UNIFORM, YOUR BRAND!"
+- Website: https://dongphucunivi.com/
+- Mô hình kinh doanh: B2B — cung cấp đồng phục thiết kế/sản xuất theo yêu cầu cho tổ chức, không phải bán lẻ đơn chiếc cho người tiêu dùng cá nhân.
+- Thị trường: Toàn quốc (Việt Nam).
+- Giá trị cung cấp: tư vấn chất liệu và thiết kế miễn phí, sản xuất tại xưởng riêng, lưu chuẩn mẫu để tái đặt hàng, giao hàng toàn quốc.
+
+Tầm nhìn: Univi định hướng trở thành biểu tượng sáng tạo hàng đầu trong lĩnh vực đồng phục tại Việt Nam, đặc biệt là vị trí số 1 trong mảng đồng phục thể thao chuyên sâu — không chỉ là xưởng sản xuất mà là người bạn đồng hành chiến lược về hình ảnh thương hiệu cho doanh nghiệp, tổ chức và cộng đồng yêu thể thao.
+
+Sứ mệnh: đồng hành cùng các chuỗi phòng tập, đội nhóm và doanh nghiệp bằng việc nghiên cứu, thiết kế và sản xuất đồng phục thể thao chuyên sâu lấy hiệu suất, sự thoải mái và sức khỏe người tập làm trung tâm; lan tỏa tinh thần vận động chủ động; phát triển thương hiệu thời trang thể thao Việt Nam đạt chất lượng quốc tế với mức giá phù hợp cho người Việt.
+
+Giá trị cốt lõi: Chân thành (nghĩ thẳng - nói thật), Trách nhiệm (nghĩ tới - làm tới), Kỷ luật (nghĩ chuẩn - làm đúng), Sáng tạo (nghĩ khác - làm mới), Quyết liệt (nghĩ nhanh - làm nhanh).
+
+## 2. Business / Entity Information
+
+Thông tin dưới đây được công bố tại trang [Giới thiệu](https://dongphucunivi.com/gioi-thieu):
+
+- Doanh nghiệp sở hữu thương hiệu: Công ty Cổ phần Tập đoàn Unicore Holdings
+- Mã số thuế: 0111401705
+- Năm thành lập: 2017
+- Xưởng sản xuất: 2.000 m², đặt tại Chương Mỹ , Hà Nội
+- Công suất sản xuất: 100.000 sản phẩm/tháng
+- Khách hàng: 500+ doanh nghiệp, phòng tập và câu lạc bộ thể thao
+- Phạm vi phục vụ: toàn quốc
+- Liên hệ: Hotline 0834.204.999 — Email dongphucunivi@gmail.com (nguồn: trang [Liên hệ](https://dongphucunivi.com/lien-he))
+
+Vải sử dụng trong sản xuất được kiểm định theo QCVN 01:2017/BCT (quy chuẩn kỹ thuật quốc gia về mức giới hạn hàm lượng formaldehyt và amin thơm trong sản phẩm dệt may).
+
+## 3. Target Customers
+
+### 3.1 Phòng tập & cộng đồng thể thao
+
+Đối tượng chính gồm phòng tập Gym, PT Studio, chuỗi Fitness Center, Yoga Studio, Pilates Studio, Wellness Center, câu lạc bộ Pickleball, câu lạc bộ chạy bộ, câu lạc bộ Golf/Tennis và câu lạc bộ MMA/võ thuật. Univi thiết kế đồng phục phân vai theo từng vị trí trong tổ chức (huấn luyện viên, PT, lễ tân, hội viên, đội thi đấu).
+
+### 3.2 Doanh nghiệp
+
+Univi cung cấp đồng phục doanh nghiệp gồm áo thun, áo gió, teambuilding và sự kiện — được thể hiện trong các dòng sản phẩm [Đồng phục áo gió](https://dongphucunivi.com/dong-phuc-ao-gio) và [Áo thun đồng phục](https://dongphucunivi.com/dong-phuc-ao-thun), phục vụ nhu cầu đồng phục nhận diện thương hiệu cho tổ chức, không giới hạn ở khối phòng tập thể thao.
+
+### 3.3 Đại lý / đối tác
+
+Univi có chương trình hợp tác đại lý phân phối, công bố tại [Đăng ký đại lý](https://dongphucunivi.com/dang-ky-dai-ly) và [Chính sách đại lý](https://dongphucunivi.com/chinh-sach-dai-ly): đại lý được cung cấp nguồn hàng từ xưởng 2.000m², hóa đơn đầy đủ và hỗ trợ marketing. Website không công bố thông tin về chương trình affiliate/KOC.
+
+## 4. Solutions
+
+- [Đồng phục Gym](https://dongphucunivi.com/dong-phuc-gym) — May đồng phục Gym theo yêu cầu cho phòng tập, PT Studio và chuỗi Fitness Center; tư vấn chất liệu UNI DRY, thiết kế miễn phí, lưu chuẩn để tái sản xuất.
+- [Đồng phục Yoga & Pilates](https://dongphucunivi.com/dong-phuc-yoga-pilates) — Giải pháp đồng phục cho Yoga Studio, Pilates Studio và Wellness Center, phát triển theo đặc thù vận động và trải nghiệm người mặc.
+- [Đồng phục Pickleball](https://dongphucunivi.com/dong-phuc-pickleball) — Đồng phục cho CLB, học viện, doanh nghiệp và giải đấu Pickleball, có thể đặt số lượng nhỏ theo dòng sản phẩm.
+- [Đồng phục chạy bộ](https://dongphucunivi.com/dong-phuc-chay-bo) — Đồng phục cho CLB, doanh nghiệp, đội nhóm và giải chạy, ưu tiên chất liệu nhẹ và thoát ẩm nhanh cho hoạt động ngoài trời.
+- [Đồng phục Golf & Tennis](https://dongphucunivi.com/dong-phuc-golf-tennis) — Đồng phục cho CLB, đội nhóm, học viện và sự kiện Golf, Tennis, ưu tiên form dáng lịch sự và giữ form tốt.
+- [Đồng phục MMA & võ thuật](https://dongphucunivi.com/dong-phuc-mma) — Đồng phục MMA, Boxing, Kickboxing và võ thuật, ưu tiên form gọn, bền và co giãn cho cường độ tập luyện cao.
+- [Giải pháp 2S Uniform](https://dongphucunivi.com/giai-phap-2s) — "Smart Sport Uniform": hệ sinh thái đồng phục thể thao thông minh dành riêng cho chuỗi phòng tập, hướng tới chuẩn hóa nhận diện và tối ưu chi phí vận hành dài hạn.
+
+## 5. Products
+
+- [Danh mục sản phẩm](https://dongphucunivi.com/san-pham) — Trang tổng hợp toàn bộ các dòng đồng phục thể thao chuyên dụng của Univi theo môn thể thao và loại sản phẩm.
+- [Đồng phục áo gió](https://dongphucunivi.com/dong-phuc-ao-gio) — Áo gió 1 lớp, 2 lớp và siêu nhẹ cho doanh nghiệp, phòng tập và CLB.
+- [Áo thun đồng phục](https://dongphucunivi.com/dong-phuc-ao-thun) — Áo thun cho đội nhóm, doanh nghiệp, sự kiện và teambuilding, tối ưu cho in/thêu logo.
+
+Ghi chú: website hiển thị số lượng lớn trang sản phẩm chi tiết theo từng mã (SKU) trong từng danh mục trên; tài liệu này không liệt kê toàn bộ SKU mà chỉ liệt kê các trang danh mục/sản phẩm cấp cao.
+
+## 6. Materials & Technology
+
+- **UNI DRY** — Công nghệ xử lý thoát ẩm (không phải một loại vải riêng mà là công nghệ áp dụng trên các dòng vải thể thao của Univi), giúp đưa hơi ẩm từ da ra bề mặt ngoài vải để bay hơi, hỗ trợ giảm cảm giác bết dính khi vận động. Tìm hiểu thêm: [Công nghệ UNI DRY](https://dongphucunivi.com/cong-nghe-uni-dry).
+- **UNIVI QUICK DRY (UNI QUICK DRY)** — Thành phần chính là sợi Polyester cao cấp PET (82-100%), co giãn đa chiều, nhẹ, nhanh khô, chống tia UV. Phù hợp cho Gym, Fitness, MMA, Running, Pickleball, Tennis.
+- **UNIVI SUPER COOL (UNI SUPER COOL)** — Thành phần chính là sợi Polyamide (76-90%), mềm, mát, mịn, co giãn tốt, chống nhăn, bền form. Phù hợp cho Yoga, Pilates, Dance, Aerobic. Tìm hiểu thêm: [Vải Super Cool là gì](https://dongphucunivi.com/vai-super-cool-la-gi).
+- **UNIVI BLENDED (UNI BLENDED)** — Kết hợp Polyester và Cotton: nhanh khô, mềm mịn, mát, nhẹ, chống tia UV, chống nhăn và bền màu. Phù hợp cho Pickleball, Running, Cycling.
+
+Vải sử dụng được kiểm định theo QCVN 01:2017/BCT. Website không công bố thông số kỹ thuật định lượng (ví dụ: chỉ số GSM, tốc độ bay hơi) hay chứng nhận vải quốc tế (ví dụ: OEKO-TEX) — tài liệu này không suy diễn thêm các thông số đó.
+
+## 7. Manufacturing
+
+- Xưởng sản xuất: 2.000 m², đặt tại Chương Mỹ, Hà Nội.
+- Công suất: 100.000 sản phẩm/tháng.
+- Mô hình: chủ động sản xuất tại xưởng riêng (không qua trung gian gia công), có phòng R&D nghiên cứu chất liệu, form dáng và trải nghiệm vận động.
+- Một số dòng sản phẩm (ví dụ: Pickleball) nhận đặt hàng từ số lượng nhỏ (khoảng 10 sản phẩm/mẫu) theo công bố trên trang danh mục tương ứng; đây không phải là MOQ áp dụng chung cho toàn bộ sản phẩm.
+- Tài liệu chi tiết: [Hồ sơ năng lực](https://dongphucunivi.com/ho-so-nang-luc) (bản PDF đầy đủ) và [Xưởng may đồng phục Univi](https://dongphucunivi.com/xuong-may-dong-phuc-univi).
+- Website không công bố lead time cụ thể hoặc chứng nhận hệ thống quản lý chất lượng (ví dụ ISO) — tài liệu này không suy diễn thêm các thông tin đó.
+
+## 8. Expertise
+
+**Đồng phục thể thao chuyên dụng**: Univi phân biệt đồng phục thể thao chuyên dụng với đồ thể thao thông thường qua việc thiết kế theo đặc thù vận động của từng bộ môn, phân vai theo vị trí trong tổ chức và sử dụng chất liệu chuyên biệt thay vì vải phổ thông. Xem thêm: [Đồng phục thể thao chuyên dụng](https://dongphucunivi.com/dong-phuc-the-thao).
+
+**Thiết kế đồng phục**: quy trình tư vấn thiết kế miễn phí, lên concept theo màu sắc, logo và nhận diện thương hiệu riêng cho từng tổ chức, lưu chuẩn thiết kế để tái sản xuất đồng bộ ở các đợt đặt hàng sau.
+
+**Lựa chọn chất liệu**: mỗi dòng chất liệu (UNI DRY, UNI QUICK DRY, UNI SUPER COOL, UNI BLENDED) phù hợp với đặc điểm vận động khác nhau — ví dụ vải mềm mượt cho Yoga/Pilates so với vải nhanh khô, chống UV cho vận động ngoài trời như Running, Pickleball.
+
+**Đồng phục phòng tập (Gym/Fitness)**: đồng phục phân vai theo huấn luyện viên, PT, lễ tân và hội viên, ưu tiên thoát ẩm và độ bền khi vận động cường độ cao.
+
+**Đồng phục Pickleball**: đồng phục thi đấu và tập luyện cho CLB, học viện và giải đấu, có thể triển khai theo form nam/nữ và in logo nhà tài trợ.
+
+**Đồng phục Yoga/Pilates**: ưu tiên chất liệu mềm, co giãn bốn chiều, hỗ trợ thoát ẩm cho lớp học đông người hoặc giáo viên dạy nhiều ca.
+
+**Đồng phục Running**: chất liệu nhẹ, thoáng, nhanh khô, phù hợp cho hoạt động ngoài trời dài thời gian.
+
+**Đồng phục doanh nghiệp**: triển khai qua các dòng áo thun và áo gió đồng phục, phục vụ nhu cầu đồng bộ nhận diện thương hiệu cho tổ chức ngoài lĩnh vực thể thao.
+
+**Sản xuất đồng phục B2B**: mô hình sản xuất tại xưởng riêng giúp Univi chủ động về chất lượng, tiến độ và khả năng tái sản xuất đúng chuẩn màu/form cho các đơn hàng bổ sung.
+
+## 9. Knowledge Resources
+
+- [Bài viết](https://dongphucunivi.com/bai-viet) — Chuyên mục bài viết của Univi về chất liệu, thiết kế, sản xuất và kinh nghiệm chọn đồng phục thể thao.
+- [Đồng phục thể thao chuyên dụng](https://dongphucunivi.com/dong-phuc-the-thao) — Bài viết nền tảng (pillar) về sự khác biệt giữa đồng phục thể thao chuyên dụng và đồ thể thao thông thường.
+- [Công nghệ UNI DRY là gì](https://dongphucunivi.com/cong-nghe-uni-dry) — Giải thích cơ chế thoát ẩm một chiều của công nghệ UNI DRY.
+- [Vải Super Cool là gì](https://dongphucunivi.com/vai-super-cool-la-gi) — Giải thích chất liệu UNI SUPER COOL và cách chọn chất liệu phù hợp cho đồng phục.
+- [Xưởng may đồng phục thể thao Univi](https://dongphucunivi.com/xuong-may-dong-phuc-univi) — Giới thiệu xưởng sản xuất, quy trình và kiểm soát chất lượng.
+- [Xưởng May Đồng Phục Thể Thao UNIVI 2000m² Tại Hà Nội](https://dongphucunivi.com/bai-viet/xuong-may-dong-phuc-the-thao-univi-2000m2-tai-ha-noi) — Bài viết chuyên sâu về năng lực xưởng sản xuất.
+- [Đồng Phục Phòng Tập Theo Yêu Cầu: 7 Bước Triển Khai Đúng](https://dongphucunivi.com/bai-viet/dong-phuc-phong-tap-theo-yeu-cau) — Hướng dẫn quy trình triển khai đồng phục cho phòng tập.
+- [May Đồng Phục Pickleball Cho CLB Theo Yêu Cầu](https://dongphucunivi.com/bai-viet/may-dong-phuc-pickleball) — Hướng dẫn lựa chọn và sản xuất đồng phục Pickleball cho CLB.
+- [May Đồng Phục Yoga Chuyên Dụng Cho Studio Và Giáo Viên](https://dongphucunivi.com/bai-viet/may-dong-phuc-yoga) — Hướng dẫn thiết kế và sản xuất đồng phục Yoga cho studio.
+- [Trần Hiền - Đồng Sáng Lập Thương Hiệu Univi Sport](https://dongphucunivi.com/dong-sang-lap-univi-sport-tran-hien) — Trang giới thiệu đồng sáng lập thương hiệu Univi Sport.
+- [Phản hồi khách hàng](https://dongphucunivi.com/feedback) — Phản hồi và đánh giá thực tế từ khách hàng đã sử dụng đồng phục Univi.
+
+Ghi chú: website có nhiều bài viết khác ngoài danh sách trên (xem đầy đủ tại trang [Bài viết](https://dongphucunivi.com/bai-viet)); tài liệu này chỉ chọn lọc các bài mang tính nền tảng/chuyên sâu.
+
+## 10. Important URLs
+
+- Homepage: https://dongphucunivi.com/
+- About: https://dongphucunivi.com/gioi-thieu
+- Capability profile: https://dongphucunivi.com/ho-so-nang-luc
+- Main Solutions: https://dongphucunivi.com/dong-phuc-gym, https://dongphucunivi.com/dong-phuc-yoga-pilates, https://dongphucunivi.com/dong-phuc-pickleball, https://dongphucunivi.com/dong-phuc-chay-bo, https://dongphucunivi.com/dong-phuc-golf-tennis, https://dongphucunivi.com/dong-phuc-mma, https://dongphucunivi.com/giai-phap-2s
+- Main Product Categories: https://dongphucunivi.com/san-pham, https://dongphucunivi.com/dong-phuc-ao-gio, https://dongphucunivi.com/dong-phuc-ao-thun
+- Technology: https://dongphucunivi.com/cong-nghe-uni-dry, https://dongphucunivi.com/vai-super-cool-la-gi
+- Manufacturing: https://dongphucunivi.com/xuong-may-dong-phuc-univi
+- Knowledge: https://dongphucunivi.com/bai-viet, https://dongphucunivi.com/dong-phuc-the-thao
+- Contact: https://dongphucunivi.com/lien-he
+- Dealer program: https://dongphucunivi.com/dang-ky-dai-ly, https://dongphucunivi.com/chinh-sach-dai-ly
+- Ordering guide: https://dongphucunivi.com/huong-dan-dat-hang

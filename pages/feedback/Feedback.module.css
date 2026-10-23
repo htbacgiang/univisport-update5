@@ -1,0 +1,138 @@
+.feedbackPage {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.heroBanner {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  opacity: 0.9;
+  filter: brightness(0.85);
+  transition: transform 0.3s ease;
+}
+
+.heroBanner:hover .heroImage {
+  transform: scale(1.02);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.heroContent {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .heroContent {
+    padding: 3rem 2.5rem;
+  }
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbLink {
+  color: rgba(255, 255, 255, 0.95);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  color: #105d97;
+}
+
+.breadcrumbSeparator {
+  margin: 0 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.heroTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.heroDescription {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .heroDescription {
+    font-size: 1.125rem;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 4rem 2rem;
+  }
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #9ca3af;
+  font-size: 1.125rem;
+}

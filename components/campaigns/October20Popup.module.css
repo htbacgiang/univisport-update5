@@ -1,0 +1,96 @@
+/* October20Popup.module.css - Thiệp chúc mừng ngày Phụ nữ Việt Nam 20/10 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap');
+
+.cardContainer {
+  background: radial-gradient(circle at 50% 15%, #ffffff 0%, #fffdfa 40%, #fff6f4 100%);
+  border: 1px solid rgba(244, 194, 194, 0.6);
+  box-shadow: 
+    0 25px 65px -12px rgba(185, 28, 28, 0.25),
+    0 12px 30px -8px rgba(219, 39, 119, 0.15),
+    0 0 0 1px rgba(255, 228, 230, 0.7);
+}
+
+/* Font chữ viết tay cách điệu nghệ thuật */
+.dancingScript {
+  font-family: 'Dancing Script', 'Brush Script MT', 'Segoe Script', cursive !important;
+}
+
+/* Font chữ tiêu đề serif cổ điển sang trọng */
+.playfairDisplay {
+  font-family: 'Playfair Display', 'Judson', Georgia, 'Times New Roman', serif !important;
+}
+
+/* Hiệu ứng màu chữ gradient đỏ ruby cao cấp */
+.textGradientRuby {
+  background: linear-gradient(135deg, #881337 0%, #b91c1c 35%, #e11d48 70%, #991b1b 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.goldAccentBorder {
+  border-image: linear-gradient(to right, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.8), rgba(212, 175, 55, 0.1)) 1;
+}
+
+/* Hiệu ứng cánh hoa hồng rơi chậm rãi, nhẹ nhàng và tinh tế */
+.petal {
+  position: absolute;
+  top: -24px;
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 50% 0 50% 50%;
+  background: radial-gradient(circle at 30% 30%, #fecdd3, #fb7185 70%, #e11d48);
+  box-shadow: 0 2px 6px rgba(225, 29, 72, 0.2);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+  will-change: transform, opacity;
+  animation-name: petalFloat;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes petalFloat {
+  0% {
+    transform: translateY(-20px) rotate(0deg) scale(0.8) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(105vh) rotate(380deg) scale(1) translateX(45px);
+    opacity: 0;
+  }
+}
+
+/* Tôn trọng prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .petal {
+    display: none !important;
+  }
+}
+
+/* Thanh cuộn tinh tế cho phần nội dung mobile */
+.customScrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(225, 29, 72, 0.25) transparent;
+}
+
+.customScrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background: rgba(225, 29, 72, 0.25);
+  border-radius: 9999px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(225, 29, 72, 0.45);
+}

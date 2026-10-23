@@ -1,0 +1,46 @@
+/* Simple text-focused styles for TShirtUniformsUniviPage - Unified with brand color #105d97 */
+.tshirtTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111827;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.tshirtSubtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.tshirtText {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.tshirtHighlight {
+  color: #105d97;
+  font-weight: 600;
+}
+
+.tshirtList {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.tshirtListItem {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Simple image styling */
+.tshirtImage {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}

@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/about/Testimonlal.js",
+    "components/about/Hero.js",
+    "pages/thiet-ke-web/index.tsx",
+    "components/about/WhyUs.js",
+    "pages/sitemap.xml.tsx",
+    "components/common/nav/useThemeSwitch.js",
+    "components/common/nav/UserNav.js",
+    "pages/api/products/index.ts",
+    "pages/dich-vu/index.js",
+    "components/product/ProductItem.jsx",
+    "components/product/ProductItem.js",
+    "pages/admin/products/index.js",
+    "pages/admin/posts/index.tsx",
+    "pages/api/whoami.js",
+    "lib/productUtils.js",
+    "components/about/ContactSection.js",
+    "pages/dashboard/khach-hang/index.tsx",
+    "pages/api/auth/[...nextauth].js",
+    "models/Product.js",
+    "store/index.js",
+    "pages/dashboard/index.tsx",
+    "pages/dashboard/dat-hang/index.jsx",
+    "pages/404.js",
+    "pages/giai-phap-2s/index.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
