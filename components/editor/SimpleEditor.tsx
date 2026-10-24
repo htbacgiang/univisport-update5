@@ -52,6 +52,7 @@ const SimpleEditor: FC<Props> = ({ content, onChange }): JSX.Element => {
   const [images, setImages] = useState<{ src: string; altText?: string; id?: string }[]>([]);
   const isInternalUpdateRef = useRef(false);
   const previousContentRef = useRef<string>("");
+  const lastSelectionRef = useRef<{ from: number; to: number } | null>(null);
 
   const fetchImages = async () => {
     try {
@@ -155,8 +156,63 @@ const SimpleEditor: FC<Props> = ({ content, onChange }): JSX.Element => {
     },
   });
 
+  useEffect(() => {
+    if (!editor) return;
+
+    const saveSelection = () => {
+      if (!showR2Modal && !showGallery && !showR2GalleryModal) {
+        const { from, to } = editor.state.selection;
+        lastSelectionRef.current = { from, to };
+      }
+    };
+
+    editor.on("selectionUpdate", saveSelection);
+    editor.on("focus", saveSelection);
+    return () => {
+      editor.off("selectionUpdate", saveSelection);
+      editor.off("focus", saveSelection);
+    };
+  }, [editor, showR2Modal, showGallery, showR2GalleryModal]);
+
+  const openR2Modal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowR2Modal(true);
+  };
+
+  const openGalleryModal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowGallery(true);
+  };
+
+  const openR2GalleryModal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowR2GalleryModal(true);
+  };
+
   const handleImageSelection = (result: ImageSelectionResult) => {
     if (!editor) return;
+    const target = lastSelectionRef.current;
+
+    if (target && typeof target.from === "number") {
+      try {
+        const docSize = editor.state.doc.content.size;
+        const validFrom = Math.min(Math.max(0, target.from), docSize);
+        const validTo = Math.min(Math.max(0, target.to), docSize);
+        editor.commands.setTextSelection({ from: validFrom, to: validTo });
+      } catch (err) {
+        console.warn("Không thể khôi phục vị trí con trỏ:", err);
+      }
+    }
+
     (editor.chain().focus() as any)
       .setImage({
         src: result.src,
@@ -165,12 +221,26 @@ const SimpleEditor: FC<Props> = ({ content, onChange }): JSX.Element => {
         width: "100%",
         aspectRatio: "auto",
         alignment: "center",
+        pos: target?.from,
       })
       .run();
   };
 
   const handleR2ImageSelection = (result: R2ImageSelectionResult) => {
     if (!editor) return;
+    const target = lastSelectionRef.current;
+
+    if (target && typeof target.from === "number") {
+      try {
+        const docSize = editor.state.doc.content.size;
+        const validFrom = Math.min(Math.max(0, target.from), docSize);
+        const validTo = Math.min(Math.max(0, target.to), docSize);
+        editor.commands.setTextSelection({ from: validFrom, to: validTo });
+      } catch (err) {
+        console.warn("Không thể khôi phục vị trí con trỏ:", err);
+      }
+    }
+
     (editor.chain().focus() as any)
       .setImage({
         src: result.src,
@@ -181,6 +251,7 @@ const SimpleEditor: FC<Props> = ({ content, onChange }): JSX.Element => {
         alignment: result.alignment || "center",
         objectFit: result.objectFit || "cover",
         objectPosition: result.objectPosition || "50% 50%",
+        pos: target?.from,
       })
       .run();
   };
@@ -237,9 +308,9 @@ const SimpleEditor: FC<Props> = ({ content, onChange }): JSX.Element => {
       <div className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
         <ToolBar
           editor={editor}
-          onOpenImageClick={() => setShowGallery(true)}
-          onOpenR2ModalClick={() => setShowR2Modal(true)}
-          onOpenR2GalleryClick={() => setShowR2GalleryModal(true)}
+          onOpenImageClick={openGalleryModal}
+          onOpenR2ModalClick={openR2Modal}
+          onOpenR2GalleryClick={openR2GalleryModal}
         />
       </div>
       <div className="relative">

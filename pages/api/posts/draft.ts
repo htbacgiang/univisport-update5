@@ -85,9 +85,9 @@ const saveDraft: NextApiHandler = async (req, res) => {
         }
 
         // Cập nhật bài viết
-        existingPost.title = title || existingPost.title;
-        existingPost.content = content || existingPost.content;
-        existingPost.meta = meta || existingPost.meta;
+        existingPost.title = title || existingPost.title || "Nháp bài viết";
+        existingPost.content = content || existingPost.content || "Nội dung nháp";
+        existingPost.meta = meta || existingPost.meta || existingPost.title || "Bản nháp bài viết";
         existingPost.tags = tags;
         if (category !== undefined) existingPost.category = category;
         existingPost.focusKeyword = focusKeyword || existingPost.focusKeyword;
@@ -122,9 +122,9 @@ const saveDraft: NextApiHandler = async (req, res) => {
       // Tạo bài viết nháp mới
       const newDraft = new Post({
         title: title || "Nháp bài viết",
-        content: content || "",
+        content: content || "Nội dung nháp",
         slug: slug || `draft-${Date.now()}`,
-        meta: meta || "",
+        meta: meta || title || "Bản nháp bài viết",
         tags,
         category: category || "",
         focusKeyword: focusKeyword || "",

@@ -136,8 +136,11 @@ export default function Home({
             >
               <PostCard post={post} />
             </div>
+
           ))}
         </div>
+
+
 
         <div className="flex justify-center mt-6">
           <Link

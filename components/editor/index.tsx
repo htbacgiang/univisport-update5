@@ -1,4 +1,4 @@
-import { ChangeEventHandler, FC, useEffect, useState, useCallback } from "react";
+import { ChangeEventHandler, FC, useEffect, useState, useCallback, useRef } from "react";
 import { useEditor, EditorContent, getMarkRange, Range } from "@tiptap/react";
 
 import StarterKit from "@tiptap/starter-kit";
@@ -70,6 +70,9 @@ const Editor: FC<Props> = ({
   const [showR2Modal, setShowR2Modal] = useState(false);
   const [showImageGallery, setShowImageGallery] = useState(false);
   const [showR2GalleryModal, setShowR2GalleryModal] = useState(false);
+
+  // Lưu vị trí con trỏ chuột trong editor để chèn ảnh/media đúng vị trí
+  const lastSelectionRef = useRef<{ from: number; to: number } | null>(null);
   const [editingGallery, setEditingGallery] = useState<{
     images: GalleryImage[];
     getPos: () => number;
@@ -265,8 +268,73 @@ const Editor: FC<Props> = ({
     },
   });
 
+  // Tự động ghi nhớ vị trí con trỏ chuột khi đang gõ/click trong editor
+  useEffect(() => {
+    if (!editor) return;
+
+    const saveSelection = () => {
+      // Chỉ lưu vị trí khi các modal chọn ảnh đang đóng
+      if (!showR2Modal && !showGallery && !showR2GalleryModal && !showImageGallery) {
+        const { from, to } = editor.state.selection;
+        lastSelectionRef.current = { from, to };
+      }
+    };
+
+    editor.on("selectionUpdate", saveSelection);
+    editor.on("focus", saveSelection);
+    return () => {
+      editor.off("selectionUpdate", saveSelection);
+      editor.off("focus", saveSelection);
+    };
+  }, [editor, showR2Modal, showGallery, showR2GalleryModal, showImageGallery]);
+
+  const openR2Modal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowR2Modal(true);
+  };
+
+  const openGalleryModal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowGallery(true);
+  };
+
+  const openR2GalleryModal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowR2GalleryModal(true);
+  };
+
+  const openImageGalleryModal = () => {
+    if (editor) {
+      const { from, to } = editor.state.selection;
+      lastSelectionRef.current = { from, to };
+    }
+    setShowImageGallery(true);
+  };
+
   const handleImageSelection = (result: ImageSelectionResult) => {
     if (!editor) return;
+    const target = lastSelectionRef.current;
+
+    if (target && typeof target.from === "number") {
+      try {
+        const docSize = editor.state.doc.content.size;
+        const validFrom = Math.min(Math.max(0, target.from), docSize);
+        const validTo = Math.min(Math.max(0, target.to), docSize);
+        editor.commands.setTextSelection({ from: validFrom, to: validTo });
+      } catch (err) {
+        console.warn("Không thể khôi phục vị trí con trỏ:", err);
+      }
+    }
+
     (editor.chain().focus() as any)
       .setImage({
         src: result.src,
@@ -275,12 +343,27 @@ const Editor: FC<Props> = ({
         width: "100%",
         aspectRatio: "auto",
         alignment: "center",
+        pos: target?.from,
       })
       .run();
   };
 
   const handleR2ImageSelection = (result: R2ImageSelectionResult) => {
     if (!editor) return;
+    const target = lastSelectionRef.current;
+
+    // Phục hồi lại vị trí con trỏ đã lưu trước khi mở modal
+    if (target && typeof target.from === "number") {
+      try {
+        const docSize = editor.state.doc.content.size;
+        const validFrom = Math.min(Math.max(0, target.from), docSize);
+        const validTo = Math.min(Math.max(0, target.to), docSize);
+        editor.commands.setTextSelection({ from: validFrom, to: validTo });
+      } catch (err) {
+        console.warn("Không thể khôi phục vị trí con trỏ:", err);
+      }
+    }
+
     (editor.chain().focus() as any)
       .setImage({
         src: result.src,
@@ -291,6 +374,7 @@ const Editor: FC<Props> = ({
         alignment: result.alignment || "center",
         objectFit: result.objectFit || "cover",
         objectPosition: result.objectPosition || "50% 50%",
+        pos: target?.from,
       })
       .run();
   };
@@ -676,10 +760,10 @@ const Editor: FC<Props> = ({
               <div className="relative z-[60] bg-gray-50 border-b border-gray-200 p-2 flex-shrink-0 sticky top-0">
                 <ToolBar
                   editor={editor}
-                  onOpenImageClick={() => setShowGallery(true)}
-                  onOpenR2ModalClick={() => setShowR2Modal(true)}
-                  onOpenR2GalleryClick={() => setShowR2GalleryModal(true)}
-                  onOpenGalleryClick={() => setShowImageGallery(true)}
+                  onOpenImageClick={openGalleryModal}
+                  onOpenR2ModalClick={openR2Modal}
+                  onOpenR2GalleryClick={openR2GalleryModal}
+                  onOpenGalleryClick={openImageGalleryModal}
                 />
               </div>
 

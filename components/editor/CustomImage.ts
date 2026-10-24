@@ -1,5 +1,6 @@
 import Image from '@tiptap/extension-image'
 import { mergeAttributes } from '@tiptap/core'
+import { TextSelection } from '@tiptap/pm/state'
 
 export type ImageAspectRatio = "auto" | "16/9" | "4/3" | "1/1" | "3/2" | "9/16";
 export type ImageAlignment = "left" | "center" | "right";
@@ -19,6 +20,7 @@ declare module '@tiptap/core' {
         alignment?: ImageAlignment;
         objectFit?: ImageObjectFit;
         objectPosition?: ImageObjectPosition;
+        pos?: number;
       }) => ReturnType;
     };
   }
@@ -300,21 +302,90 @@ export const CustomImage = Image.extend({
     return {
       setImage:
         (options: any) =>
-        ({ commands }: any) => {
-          return commands.insertContent({
-            type: this.name,
-            attrs: {
-              src: options.src,
-              alt: options.alt || '',
-              title: options.title || '',
-              caption: options.caption || null,
-              width: options.width || '100%',
-              aspectRatio: options.aspectRatio || 'auto',
-              alignment: options.alignment || 'center',
-              objectFit: options.objectFit || 'cover',
-              objectPosition: options.objectPosition || '50% 50%',
-            },
-          });
+        ({ tr, dispatch, state }: any) => {
+          const { schema } = state;
+          const nodeType = schema.nodes[this.name];
+          if (!nodeType) return false;
+
+          const attrs = {
+            src: options.src,
+            alt: options.alt || '',
+            title: options.title || '',
+            caption: options.caption || null,
+            width: options.width || '100%',
+            aspectRatio: options.aspectRatio || 'auto',
+            alignment: options.alignment || 'center',
+            objectFit: options.objectFit || 'cover',
+            objectPosition: options.objectPosition || '50% 50%',
+          };
+
+          const imageNode = nodeType.create(attrs);
+
+          if (!dispatch) return true;
+
+          // If text was selected and no explicit pos was passed, delete the selection first
+          if (typeof options.pos !== 'number' && !state.selection.empty && state.selection.from !== state.selection.to) {
+            tr.deleteSelection();
+          }
+
+          let targetPos = typeof options.pos === 'number' ? options.pos : tr.selection.from;
+          const docSize = tr.doc.content.size;
+          targetPos = Math.max(0, Math.min(targetPos, docSize));
+
+          const $pos = tr.doc.resolve(targetPos);
+
+          if ($pos.parent && $pos.parent.isTextblock) {
+            const isEmpty = $pos.parent.textContent.trim().length === 0;
+
+            if (isEmpty) {
+              const start = $pos.before($pos.depth);
+              const end = $pos.after($pos.depth);
+              tr.replaceWith(start, end, imageNode);
+
+              const afterPos = start + imageNode.nodeSize;
+              if (afterPos >= tr.doc.content.size) {
+                tr.insert(afterPos, schema.nodes.paragraph.create());
+              }
+              tr.setSelection(TextSelection.near(tr.doc.resolve(afterPos)));
+            } else if ($pos.parentOffset === 0) {
+              const beforePos = $pos.before($pos.depth);
+              tr.insert(beforePos, imageNode);
+              const nextPos = beforePos + imageNode.nodeSize;
+              tr.setSelection(TextSelection.near(tr.doc.resolve(nextPos)));
+            } else if ($pos.parentOffset === $pos.parent.content.size) {
+              const afterPos = $pos.after($pos.depth);
+              tr.insert(afterPos, imageNode);
+              const pPos = afterPos + imageNode.nodeSize;
+              const nextNode = tr.doc.resolve(pPos).nodeAfter;
+              if (!nextNode || nextNode.type.name !== 'paragraph') {
+                tr.insert(pPos, schema.nodes.paragraph.create());
+              }
+              tr.setSelection(TextSelection.near(tr.doc.resolve(pPos)));
+            } else {
+              const beforePos = $pos.before($pos.depth);
+              const afterPos = $pos.after($pos.depth);
+              const firstPart = $pos.parent.cut(0, $pos.parentOffset);
+              const secondPart = $pos.parent.cut($pos.parentOffset);
+
+              const node1 = $pos.parent.type.create($pos.parent.attrs, firstPart.content);
+              const node2 = $pos.parent.type.create($pos.parent.attrs, secondPart.content);
+
+              tr.replaceWith(beforePos, afterPos, [node1, imageNode, node2]);
+              const pPos = beforePos + node1.nodeSize + imageNode.nodeSize;
+              tr.setSelection(TextSelection.near(tr.doc.resolve(pPos)));
+            }
+          } else {
+            tr.insert(targetPos, imageNode);
+            const afterPos = targetPos + imageNode.nodeSize;
+            if (afterPos >= tr.doc.content.size) {
+              tr.insert(afterPos, schema.nodes.paragraph.create());
+            }
+            tr.setSelection(TextSelection.near(tr.doc.resolve(afterPos)));
+          }
+
+          tr.scrollIntoView();
+          dispatch(tr);
+          return true;
         },
     };
   },

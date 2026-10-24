@@ -22,10 +22,18 @@ const Button: FC<Props> = ({
   const activeClass = active ? "active" : "";
   const combinedClasses = `toolbar-button ${activeClass} ${className}`.trim();
 
+  const handleMouseDown: MouseEventHandler<HTMLButtonElement> = (e) => {
+    // Ngăn chặn toolbar button làm mất focus / mất con trỏ chuột trong editor
+    e.preventDefault();
+    if (onMouseDown) {
+      onMouseDown(e);
+    }
+  };
+
   return (
     <button
       type="button"
-      onMouseDown={onMouseDown}
+      onMouseDown={handleMouseDown}
       onClick={onClick}
       onBlur={onBlur}
       className={combinedClasses}

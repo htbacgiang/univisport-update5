@@ -15,7 +15,7 @@ function stripHtml(html: string): string {
 }
 
 async function callGemini(prompt: string, apiKey: string) {
-  const models = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-3.8-flash"];
+  const models = ["gemini-3.8-flash", "gemini-3.8-flash-lite", "gemini-3.5-flash"];
   let lastError = "";
 
   for (const model of models) {
